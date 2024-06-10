@@ -1,0 +1,230 @@
+.postActionContainer{
+  padding-left: 35px;
+  font-size: 13px;
+  color: var(--bs-gray-600);
+  margin-bottom: 10px;
+}
+
+.postFormContainer {
+  display: flex;
+  padding: 2%;
+  border-bottom: 1px solid rgb(230, 236, 240);
+  flex-shrink: 0;
+}
+.modal .postFormContainer{
+  border: none;
+  padding: 0;
+  padding-top: 2%;
+
+}
+
+.userImageContainer {
+  width: 50px;
+  height: 50px;
+}
+
+.userImageContainer img {
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.textareaContainer {
+  flex: 1;
+  padding: 0 2%;
+}
+.textareaContainer textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 1.2em;
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.buttonsContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2%;
+}
+.buttonsContainer button{
+  margin: 0 2%;
+}
+
+.postButton {
+  background-color: var(--bs-primary);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 7px 15px;
+}
+
+.postButton:hover {
+  background-color: var(--bs-light);
+}
+
+.postButton:disabled {
+  background-color: var(--bs-secondary);
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  flex-shrink: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 2% 0;
+}
+.mainContentContainer{
+  flex: 1;
+  display: flex;
+}
+.postContentContainer{
+  flex: 1;
+  padding-left: 2%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.header{
+  flex: 1;
+  justify-content: space-between;
+  position: relative;
+}
+
+.date{
+  text-align: right;
+}
+
+.username, .date{
+  font-size: .76rem;
+  color: var(--bs-gray-600)
+}
+
+.displayName{
+  font-weight: bold;
+}
+
+.postFooter{
+  flex: 1;
+  display: flex;
+ 
+  align-items: center; 
+}
+
+.userOptionsContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: absolute;
+  margin-bottom: 2.5%;
+}
+
+.postDeleteButton{
+  color: var(--bs-danger);
+  width: 5.5%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postDeleteButton:hover{
+  color: red;
+}
+
+.postFooter .postButtonContainer{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.pinButton.active, .pinned {
+  color: var(--bs-primary-light);
+}
+.pinned{
+  font-size: 12px;
+}
+
+.pinButton{
+  color: var(--bs-gray-600);
+  width: 5.5%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pinButton:hover{
+  color: var(--bs-primary);
+}
+.pinButton:hover.active{
+  color: var(--bs-secondary);
+}
+.postBody{
+  background-color: var(--bs-secondary);
+  padding: 2%;
+  border-radius: 10px;
+  color: var(--bs-gray-800);
+}
+.postFooter .postButtonContainer button{
+  padding: 0 2%;
+  background-color: transparent;
+  border: none;
+  color: var(--bs-gray-600);
+}
+.postFooter .postButtonContainer button:hover{
+  color: var(--bs-primary);
+}
+
+#like:hover{
+  color: var(--bs-red);
+  
+}
+.postButtonContainer button.red.active{
+  color: red;
+}
+.postButtonContainer button.red.active:hover{
+  color: var(--bs-red);
+}
+
+#retweet:hover{
+  color: var(--bs-green);
+}
+
+.postButtonContainer button.green.active{
+  color: green;
+}
+.postButtonContainer button.green.active:hover{
+  color: var(--bs-green);
+}
+.pinned-post {
+  border-bottom: 10px solid var(--bs-primary-light);
+}
+@media (prefers-color-scheme: dark) {
+  .modal-content{
+    background-color: var(--bs-dark)
+  }
+  .modal-title {
+    color: var(--bs-gray-200);
+    font-weight: bold;
+  }
+  .post{
+    background-color: var(--dark-light);
+    border-bottom: 1px solid rgb(230, 236, 240);
+  }
+  .postBody{
+    background-color: var(--bs-secondary);
+    padding: 2%;
+    border-radius: 10px;
+    color: var(--bs-gray-200);
+  }
+}

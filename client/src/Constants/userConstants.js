@@ -1,0 +1,17 @@
+// return a single user
+export const GET_USER_REQUEST = "GET_USER_REQUEST";
+export const GET_USER_SUCCESS = "GET_USER_SUCCESS";
+export const GET_USER_FAILURE = "GET_USER_FAILURE";
+export const CLEAR_SELECTED_USER = "CLEAR_SELECTED_USER";
+
+// update a single user
+export const UPDATE_USER_REQUEST = "UPDATE_USER_REQUEST";
+export const UPDATE_USER_SUCCESS = "UPDATE_USER_SUCCESS";
+export const UPDATE_USER_FAILURE = "UPDATE_USER_FAILURE";
+export const UPDATE_USER_CLEAR = "UPDATE_USER_CLEAR";
+
+// get all users
+export const GET_USERS_REQUEST = "GET_USERS_REQUEST";
+export const GET_USERS_SUCCESS = "GET_USERS_SUCCESS";
+export const GET_USERS_FAILURE = "GET_USERS_FAILURE";
+export const CLEAR_USERS = "CLEAR_USERS";
