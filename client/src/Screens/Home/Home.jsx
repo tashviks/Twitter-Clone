@@ -43,7 +43,7 @@ const Home = () => {
   return (
     <>
       <ReplyModal show={show} handleClose={() => setShow(false)} post={post} user={user} setShow={setShow} socket={socket}/>
-      <Meta title={`Tweetr | Home`} />
+      <Meta title={`Twitter | Home`} />
       <Container fluid>
         {loading ? (
           <Loader />

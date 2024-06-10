@@ -1,7 +1,7 @@
 @import url('./bootstrap.min.css');
 
 :root{
-  --dark-light: #3d3d3d;
+  --dark-light: #000000;
   --bs-primary-light: #4a7db4;
 }
 
@@ -12,7 +12,7 @@
   color: var(--bs-primary);
 }
 body{
-  color:rgba(255, 255, 255, 0.15)
+  color:rgba(5, 4, 4, 0.15)
 }
 a{
   text-decoration: none;

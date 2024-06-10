@@ -38,13 +38,6 @@ if (process.env.NODE_ENV === "development") {
 
 // Sanitize Data
 app.use(mongoSanitize());
-// Set Security headers
-// app.use(helmet());
-// prevent XSS attacks
-app.use(xss());
-// Prevent hpp pollution
-app.use(hpp());
-// CORS
 app.use(cors());
 
 // API Routes
@@ -79,27 +72,33 @@ io.on("connection", (socket) => {
     socket.join(userData._id);
     socket.emit("connected");
   });
+
   socket.on("join", (room) => {
     console.log(`${room.user.username} has joined the chat in room`.green + ` ${room.chatId}`.blue);
     socket.join(room.chatId);
   });
+
   socket.on("typing", (room) => {
     // let the client know that the user is typing
     socket.broadcast.to(room.id).emit("typing", room.user.username);
   });
+
   socket.on("stopTyping", (room) => {
     console.log(`${room.user.username} has stopped typing`.yellow);
     // let the client know that the user is no longer typing
     socket.broadcast.to(room.id).emit("stopTyping", room);
   });
+
   socket.on("leave", (room) => {
     console.log(`${room.user.username} has left the chat in room`.yellow + ` ${room.chatId}`.blue);
     socket.leave(room.id);
   });
+
   socket.on("openNotify", (n) => {
     console.log(`Notification opened: ${n.id}`.yellow);
     socket.in(n.user._id).emit("openedNotification", n);
   });
+
   socket.on("sendNewMessage", (room) => {
     // send the new message to the client
     socket.broadcast.to(room.chat._id).emit("newMessage", room.message);
@@ -111,8 +110,10 @@ io.on("connection", (socket) => {
       socket.in(user._id).emit("message received", room.message);
     });
   });
+
   socket.on("notification received", (room) => {
     console.log(room);
     socket.in(room).emit("notification received");
   });
+  
 });

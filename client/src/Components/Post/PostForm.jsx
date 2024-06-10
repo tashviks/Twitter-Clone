@@ -51,7 +51,7 @@ const PostForm = ({ children, user, submitHandler, isReply = false }) => {
               type="submit"
               className="postButton"
             >
-              Tweet'r
+              Tweet
             </Button>
           </div>
         </Form>

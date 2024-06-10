@@ -8,8 +8,6 @@ import { setAlert } from "../actions/alert";
 
 
 export const videoUploadImage = (files) => async (dispatch) => {
-  // files, is an array, since we have the ability to upload multiple
-  // files we only want the first file.
   const file = files[0];
   const formData = new FormData();
   formData.append("file", file);
