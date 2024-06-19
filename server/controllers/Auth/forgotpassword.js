@@ -11,7 +11,7 @@ import errorHandler from '../../middleware/errorHandler.js'
  */
 
 /**
- * @COMMENTS
+ * 
  * 1: Function will be used to handle the forgot password process for the user
  *
  * 2: The body asks for the User's username, once that is passed in.
@@ -22,6 +22,7 @@ import errorHandler from '../../middleware/errorHandler.js'
  *
  * 4: Then they use the resetPasswordToken to reset their password.
  */
+
 //
 
 export const forgotPassword = expressAsyncHandler(async (req, res) => {

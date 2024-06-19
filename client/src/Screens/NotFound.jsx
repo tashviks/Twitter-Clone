@@ -25,7 +25,7 @@ const NotFound = () => {
 
   return (
     <>
-      <Meta title={`Truthcasting | 404 Page not Found`} />
+      <Meta title={`Err 404 Page not Found`} />
       <Container style={{ margin: "15% auto", textAlign: "center" }}>
         <Row className="not-found-container container">
           <Col>

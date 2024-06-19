@@ -1,5 +1,4 @@
 import { errorHandler } from "../../utils/errorHandler";
-
 export const userTyping = (chatId) => (dispatch, getState) => {
   try {
     const {

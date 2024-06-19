@@ -2,6 +2,10 @@ import io from "socket.io-client";
 import { SOCKET_CONNECT, SOCKET_CONNECT_ERROR, SOCKET_CONNECT_SUCCESS } from "../../Constants/socketConstants";
 import { errorHandler } from "../../utils/errorHandler";
 
+/**
+ * Creates a socket connection and sets up event listeners.
+ * returns a funtion : The async function that creates the socket connection.
+ */
 export const createConnection = () => async (dispatch, getState) => {
   try {
     // get the user from state

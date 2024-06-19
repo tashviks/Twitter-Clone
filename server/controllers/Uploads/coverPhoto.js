@@ -6,7 +6,6 @@ const errorHandler = require("../../middleware/errorHandler.js");
 const userObject = require("../../utils/userObject.js");
 const Post = require("../../models/Post.js");
 // const sharp = require("sharp");
-
 /* 
   @Desc:   Uploads a photo to the images folder
   @Route:  POST /api/projects

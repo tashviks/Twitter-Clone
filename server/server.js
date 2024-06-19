@@ -31,7 +31,6 @@ app.use(express.json());
 // file uploader, allows to accept file data
 app.use(fileupload());
 
-// Dev logging middleware
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }

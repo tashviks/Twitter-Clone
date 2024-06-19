@@ -7,7 +7,7 @@ const errorHandler = require("../../middleware/errorHandler");
  * @route              - GET /api/notifications
  * @returns { Object } - An array of { Notification } objects
  * @access             - Private
- * @author             - Austin Howard
+ *
  */
 module.exports = asyncHandler(async (req, res, next) => {
   try {

@@ -57,7 +57,7 @@ const ProfileScreen = () => {
         <>
           <ChangeProfilePicModal show={showModal} setShow={setShowModal} handleClose={handleClose} />
           <ChangeCoverPhotoModal show={showCoverPhotoModal} setShow={setShowCoverPhotoModal} />
-          <Meta title={`Tweetr | ${profile.firstName}'s Profile`} />
+          <Meta title={`Twitter-SpeakX | ${profile.firstName}'s Profile`} />
           <Container className="profileHeaderContainer" fluid>
             <div className="coverPhotoSection">
               <div className="coverPhotoContainer">

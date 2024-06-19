@@ -13,7 +13,6 @@ export const videoUploadImage = (files) => async (dispatch) => {
   formData.append("file", file);
 
   dispatch({ type: UPLOAD_IMAGE_REQUEST });
-
   //makes the request to the backend
   try {
     const config = {

@@ -31,7 +31,7 @@ const Login = () => {
 
   return (
     <Container fluid className="wrapper">
-      <Meta title={`Tweetr | Login`} />
+      <Meta title={`Twitter-SpeakX | Login`} />
       <FormContainer>
         {loading ? (
           <Loader />

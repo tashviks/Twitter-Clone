@@ -8,7 +8,7 @@ const Notification = require("../../models/Notification");
  *  @route              - GET /api/notifications/:id
  *  @returns { Object } - A { Notification } object
  *  @access             - Private
- *  @author             - Austin Howard
+ *  
  */
 module.exports = asyncHandler(async (req, res, next) => {
   try {

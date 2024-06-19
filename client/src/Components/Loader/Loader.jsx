@@ -33,7 +33,7 @@ const Loader = ({
                 }}
                 className="mt-2 loader-text"
               >
-                Fetching Data...
+                Loading...
               </p>
             </>
           ) : (

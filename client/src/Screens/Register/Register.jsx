@@ -61,8 +61,8 @@ const Register = () => {
     <>
       <Container fluid className="wrapper">
         <Meta
-          title={"Tweetr | Signup"}
-          desc={"Sign up for Tweetr"}
+          title={"Twitter| Signup"}
+          desc={"Sign up for Twitter"}
           keywords={"signup"}
         />
 
